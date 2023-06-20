@@ -2,9 +2,9 @@ import mysql from 'mysql';
 let todos
 const conector = mysql.createPool({
   host: 'localhost',
-  user: 'icesena',
-  password: 'Yogano92!',
-  database: 'agenda_contactos',
+  user: '******',
+  password: '*****',
+  database: '***********',
 });
 
 
