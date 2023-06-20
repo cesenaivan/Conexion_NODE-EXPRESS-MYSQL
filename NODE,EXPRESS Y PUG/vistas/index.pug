@@ -1,0 +1,24 @@
+html 
+    head 
+        title=titulo 
+        link(rel="stylesheet", href="style.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+    body 
+        div.container
+            input(type="text" placeholder='name' id='name' name='name')
+            input(type="text" placeholder='email' id='email')
+            input(type="number" placeholder='phone' id='phone')
+            input(type="text" placeholder='subject' id='subject')
+            input(type="text" placeholder='message' id='message')
+            button(id="btn-agregar") Add Contact
+            div.list
+                each contacto in contactos
+                    p=`${contacto.id_contact}-- ${contacto.name}`
+                    span(class="borrar material-icons" title='Borrar id' id=contacto.id_contact) delete
+                   
+            script(src="funciones.js")
+
+
+
+
+<!--button(type='button' id='btn-reniciar') Reiniciar contador de ID...........proximamente-->
